@@ -1,4 +1,4 @@
-//引入vue 精简版  正式版是vue.js dist/vue.js
+//引入vue 精简版  正式版是vue.js
 import Vue from 'vue'
 //app所有组件的父组件
 import App from './App.vue'

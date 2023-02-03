@@ -4,8 +4,8 @@
     <h1 v-text="msg" ref="title"></h1>
     <button ref="btn" @click="showDom">点我输出上方的dom元素</button>
     <School ref="sch" />
-    <!-- 传数据 -->
-    <Student name="李" sex="男" :age="12" />
+    <Student />
+    <Student />
   </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
       msg: "欢迎Vue",
     };
   },
-
   // 注册组件
   components: {
     School,

@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App.vue'
 // 关闭生产提示
 Vue.config.productionTip = false
+function extend(){
+  
+}
 // 创建vue实例对象  ---vm
 new Vue({
   // 将app组件放入容器中
