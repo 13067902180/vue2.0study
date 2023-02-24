@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>sessionlocalStorage</h2>
+    <button onclick="saveData()">点我保存一个数据</button>
+    <button onclick="readData()">读取数据</button>
+    <button onclick="deleteData()">删除数据</button>
+    <button onclick="deleteDataAll()">清空数据</button>
+  </body>
+  <script>
+    let p = { name: "zhangsan", age: 19 };
+    function saveData() {
+      sessionlocalStorage.setItem("msg", "hello");
+      sessionlocalStorage.setItem("msg2", 66);
+      sessionlocalStorage.setItem("p", JSON.stringify(p));
+    }
+    function readData() {
+      const result = sessionlocalStorage.getItem("p");
+      console.log(JSON.parse(result));
+      console.log(sessionlocalStorage.getItem("msg"));
+      console.log(sessionlocalStorage.getItem("msg2"));
+    }
+    function deleteData() {
+      sessionlocalStorage.removeItem("msg");
+    }
+    function deleteDataAll() {
+      sessionlocalStorage.clear();
+    }
+  </script>
+</html>
