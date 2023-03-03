@@ -1,0 +1,26 @@
+<template>
+  <div class="count">
+    <h1>当前求和为:</h1>
+    <select name="" id="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </div>
+</template>
+
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Category",
+  props: ["title"],
+  data() {
+    return {
+      games: ["火锅1", "烧烤", "火锅", "烧烤"],
+    };
+  },
+};
+</script>
+
+<style>
+</style>
