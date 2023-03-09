@@ -55,7 +55,6 @@ export default {
           return err;
         });
     },
-    // 不带痕迹
     replaceShow(m) {
       this.$router
         .replace({

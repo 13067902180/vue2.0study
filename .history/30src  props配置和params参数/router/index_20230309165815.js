@@ -35,18 +35,16 @@ export default new VueRouter({
                         path: 'detail',
                         component: Detail,
                         // props的第一种写法，值为对象，该对象中的所有key-value 已props传给detail组件 组件用props接受
+
                         // props: { a: 1, b: 'hello' }
-                        // props的第二种写法，值为布尔值，若布尔值为真就会把该组件收到的说有params参数以props的形式传给detail组件  只能传递params参数 组件用props接受
+                        // props的第二种写法，值为布尔值，若布尔值为真就会把该组件收到的说有params参数以props的形式传给detail组件  只能传递params参数
                         // path: 'detail/:id/:title',
-
-
-                        // 
                         // props: true,
                         // 第三种写法，值为函数
-
-                        // 解构赋值
                         // props($router) {
-                        props({ query }) { //   props({query:{id,title}}){
+                        // 解构赋值
+                        props({ query }) {
+                            //   props({query:{id,title}}){
                             // return { id: $router.query.id, title: $router.query.title }
                             return { id: query.id, title: query.title }
                             //  return { id: id, title:title }

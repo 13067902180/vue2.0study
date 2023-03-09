@@ -43,10 +43,10 @@ export default new VueRouter({
                         // 
                         // props: true,
                         // 第三种写法，值为函数
-
-                        // 解构赋值
                         // props($router) {
-                        props({ query }) { //   props({query:{id,title}}){
+                        // 解构赋值
+                        props({ query }) {
+                            //   props({query:{id,title}}){
                             // return { id: $router.query.id, title: $router.query.title }
                             return { id: query.id, title: query.title }
                             //  return { id: id, title:title }

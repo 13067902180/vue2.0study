@@ -46,7 +46,8 @@ export default new VueRouter({
 
                         // 解构赋值
                         // props($router) {
-                        props({ query }) { //   props({query:{id,title}}){
+                        props({ query }) {
+                            //   props({query:{id,title}}){
                             // return { id: $router.query.id, title: $router.query.title }
                             return { id: query.id, title: query.title }
                             //  return { id: id, title:title }
